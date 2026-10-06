@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Atlas Barber – Salon de Coiffure & Barbier Premium",
+  "description": "Barbier traditionnel et salon de coiffure homme à Casablanca. Coupe dégradé, taille de barbe, rasage à l'ancienne et soins visage avec réservation WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

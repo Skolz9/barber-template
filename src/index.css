@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-accent: #A65B3A;
+    --color-accent-hover: #8E4B2E;
+    --color-off-white: #F7F6F4;
+    --color-charcoal: #1F1F1F;
+    --color-charcoal-deep: #161616;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  [dir="rtl"] body {
+    font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+[dir="rtl"] .font-display {
+  font-family: 'Cairo', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 8s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-kenburns {
+    animation: none !important;
+    transform: none !important;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
